@@ -25,11 +25,5 @@ db.push("array", "orange");
 db.clear(); // veri silme
 db.console("Database'e Bağlanıldı")
 ```
-# Önemli Bilgiler
-## Örnek :
-```js
-Mesela Örnek Adlı Verimiz Olsun İlk Olarak const db = new wasp(); da Yazdıkdan Sonra waspdb/database.json Dosyası
-Açıldıkdan Sonra {} parantezi açalım içine "Örnek":"Değer" yazalım aksi taktirde JSON hatası Alırız 2. bir Variable Açıcaksanız "Değer" kısmının Sonuna , ekleyiniz 
-
-İyi Kullanımlar 
-```
+[![Discord User](https://discord.com/users/867386516015415296)]
+[![Official Discord Server](https://discord.gg/bZMpFNMYAM)]
