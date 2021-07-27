@@ -1,0 +1,24 @@
+{
+  "name": "wasp.db",
+  "version": "1.0.0",
+  "description": "wasp.db Tamamen Türkçe Bir Database Modülü",
+  "main": "./src/index.js",
+  "types": "./src/index.ts",
+  "keywords": [
+    "db",
+    "database",
+    "Database",
+    "quickdb",
+    "mongoose",
+    "mongodb",
+    "win",
+    "quick.db",
+    "aoi.js",
+    "dbd.js",
+    "API",
+    "code"
+  ],
+  "author": "Wasp",
+  "license": "MIT"
+}
+
