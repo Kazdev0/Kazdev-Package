@@ -25,5 +25,7 @@ db.push("array", "orange");
 db.clear(); // veri silme
 db.console("Database'e Bağlanıldı")
 ```
-[![Discord User](https://discord.com/users/867386516015415296)]
-[![Official Discord Server](https://discord.gg/bZMpFNMYAM)]
+# İletişim
+[Discord User](https://discord.com/users/867386516015415296)
+#
+[Official Discord Server](https://discord.gg/bZMpFNMYAM)
