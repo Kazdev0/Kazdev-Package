@@ -1,0 +1,30 @@
+{
+  "name": "kaz.db",
+  "version": "1.0.2",
+  "description": "Basic Database Module",
+  "main": "index.js",
+  "keywords": [
+     "db",
+    "database",
+    "Database",
+    "quickdb",
+    "mongoose",
+    "mongodb",
+    "kaz",
+    "quick.db",
+    "aoi.js",
+    "dbd.js",
+    "API",
+    "code"
+  ],
+  "bundleDependencies": false,
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kazdev0/kazdb.git"
+  },
+  "author": "KazDev0",
+  "license": "MIT"
+}
