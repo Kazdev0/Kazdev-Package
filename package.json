@@ -1,0 +1,21 @@
+{
+  "name": "kazdev",
+  "version": "2.0.1",
+  "description": "A User-Friendly Module",
+  "main": "./src/index.js",
+  "keywords": [
+    "KazDev",
+    "Database",
+    "Webhook"
+  ],
+  "dependencies": {
+    "axios": "^0.27.2",
+    "colors": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kazdev0/Kazdev-Package"
+  },
+  "author": "KazDev0",
+  "license": "MIT"
+}
