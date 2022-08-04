@@ -12,6 +12,7 @@ db.fetch(key)
 db.add(key, key2)
 db.subtract(key, key2)
 db.push("array",{"apple":1,"fish":"not found"})
+db.pull("array","element")
 db.delete(key)
 db.clear(access) // true, false DELETE ALL DATABASE
 db.on("ready","Connected On Kazdev Package Database")

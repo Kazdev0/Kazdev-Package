@@ -1,11 +1,9 @@
 const axios = require("axios");
-const color = require("colors");
 module.exports = class Webhook {
     constructor(url,username = null, avatar = null){
 		this.url = url;
 		this.username = username;
 		this.avatar_url = avatar;
-		console.log(color.cyan("[KazDev Package Manager]: Webhook System Used"))
 	}
 	async send(content, tts = false, components = []){
 		axios.post(`${this.url}?wait=true`, {

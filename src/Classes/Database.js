@@ -1,28 +1,23 @@
-const fs = require("node:fs");
-const color = require("colors");
 
+const fs = require("node:fs");
 
 module.exports = class Database {
 
    
     constructor(filePath){
 
-        this.jsonFilePath = filePath || "./kazdev.db/database.json";
-        console.log(color.cyan("[KazDev Package Manager]: Database System Used"))
+        this.jsonFilePath = filePath || "./kazdev/database.json";
     
         this.data = {};
 
         if(!fs.existsSync(this.jsonFilePath)){
-            fs.mkdir(this.jsonFilePath, () => {
-                console.log("Klasör Oluşturuldu")
-            });
             fs.writeFileSync(this.jsonFilePath, "{}", "utf-8");
         } else {
             this.fetchDataFromFile();
         }
     }
 
-   
+    
     fetchDataFromFile(){
         const savedData = JSON.parse(fs.readFileSync(this.jsonFilePath));
         if(typeof savedData === "object"){
@@ -45,6 +40,7 @@ module.exports = class Database {
     }
 
     has(key){
+        if(!key) return Error("Key Error")
         return Boolean(this.data[key]);
     }
     
@@ -68,7 +64,7 @@ module.exports = class Database {
     }
 
 
-    subtract(key, count){
+    sub(key, count){
         if(!this.data[key]) this.data[key] = 0;
         this.data[key] -= count;
         this.saveDataToFile();
@@ -81,6 +77,19 @@ module.exports = class Database {
         this.saveDataToFile();
     }
 
+    pull(key, element){
+    if(!key) return;
+    if(!element) return;
+    const arr = this.data[key]
+ 
+    for( var i = 0; i < arr.length; i++){ 
+       if ( arr[i] === element) { 
+         arr.splice(i, 1); 
+       }
+    }
+    this.saveDataToFile();
+
+    }
 
     clear(access){
         if(access == true){
